@@ -1,0 +1,136 @@
+.__our-speciality {
+    margin-top: 1rem;
+    padding: 1rem 0 2rem 0;
+    background-color: $color-theme;
+
+    .container {
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        >.col-3 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+
+        .speciality-card {
+            background-color: $color-white;
+            height: 100%;
+            border: 0;
+            border-radius: 0;
+
+            .speciality-card-body {
+                color: $color-white;
+                padding-top: 0.5rem;
+                text-align: center;
+
+                h3 {
+                    margin-left: 1rem;
+                    font-size: $font-size-16;
+                    font-weight: $font-weight-semibold;
+                    padding-top: 0.5rem;
+                }
+
+                a {
+                    margin-left: 1rem;
+                    font-size: $font-size-14;
+                    color: $color-theme-darkest;
+                    font-weight: $font-weight-semibold;
+                    text-decoration: underline;
+
+                    &::after {
+                        content: "";
+                        color: $color-theme-darkest;
+                    }
+
+                    &:hover {
+                        color: $color-theme-red;
+                        text-decoration: underline;
+                    }
+                }
+
+                .speciality-card-text {
+                    padding-top: 1rem;
+                }
+            }
+
+            .speciality-card-background {
+                display: none;
+                position: absolute;
+                right: 0;
+                width: 50%;
+                height: 232px;
+                background-color: $color-gray-1;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .__our-speciality {
+        margin-top: 2rem;
+        padding: 2rem 0 4rem 0;
+        background-color: $color-theme;
+
+        .container {
+            max-width: $max-width;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+
+            >.col-3 {
+                flex: 0 0 auto;
+                width: 25%;
+            }
+
+            .speciality-card {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                .speciality-card-body {
+                    color: $color-white;
+                    width: 245px;
+                    height: 232px;
+                    padding-top: 2rem;
+                    text-align: left;
+
+                    h3 {
+                        font-size: $font-size-20;
+                        padding-top: 2rem;
+                    }
+
+                    a {
+                        font-size: $font-size-16;
+                        color: $color-theme-darkest;
+                        font-weight: $font-weight-semibold;
+                        text-decoration: underline;
+
+                        &::after {
+                            content: "\00a0>";
+                            color: $color-theme-darkest;
+                        }
+
+                        &:hover {
+                            color: $color-theme-red;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .speciality-card-text {
+                        padding-top: 1rem;
+                    }
+                }
+
+                .speciality-card-background {
+                    display: block;
+                }
+            }
+        }
+    }
+}

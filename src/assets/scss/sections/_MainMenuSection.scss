@@ -1,0 +1,109 @@
+.mainmenu {
+    max-width: 100%;
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo menuicons"
+        "menulinks menulinks";
+
+    .logo {
+        grid-area: logo;
+        font-size: 35px;
+        font-weight: $font-weight-bold;
+        color: $color-theme-dark;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .menu-links {
+        grid-area: menulinks;
+        display: none;
+        height: 100%;
+
+        .menu-link {
+            color: $color-theme-dark;
+            font-weight: $font-weight-medium;
+            text-decoration: none;
+            margin: 15px 15px;
+
+            &:hover {
+                color: $color-theme-red;
+                text-decoration: none;
+            }
+        }
+
+        .active {
+            color: $color-theme-red;
+            text-decoration: none;
+        }
+    }
+
+    .menu-icons {
+        grid-area: menuicons;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .menu-icon {
+            background-color: $color-white;
+            color: $color-theme-dark;
+            width: 36px;
+            height: 36px;
+            margin: 5px 10px 0 10px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 6px 4px $color-shadow;
+            position: relative;
+            transition: all 0.1s ease-in-out;
+            border: none;
+
+            &:hover {
+                color: $color-white;
+                background-color: $color-theme-dark;
+                text-decoration: none;
+                box-shadow: 0 0 6px 4px $color-shadow;
+            }
+        }
+
+        .btn-menu-icon {
+            background-color: $color-theme-dark;
+            color: $color-white;
+            border: none;
+            outline: none;
+        }
+
+        .active {
+            color: $color-white;
+            background-color: $color-theme-dark;
+            text-decoration: none;
+            box-shadow: 0 0 6px 4px $color-shadow;
+        }
+    }
+}
+
+@include l-device {
+    .mainmenu {
+        max-width: $max-width;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "logo menulinks menuicons";
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .menu-links {
+            grid-area: menulinks;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: $font-weight-regular;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

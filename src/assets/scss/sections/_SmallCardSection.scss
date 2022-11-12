@@ -1,0 +1,106 @@
+.__small-card-section {
+    margin-top: 4rem;
+
+    .container {
+        width: 1110px;
+
+        .col {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .small-card-headline {
+            font-size: $font-size-20;
+            font-weight: $font-weight-bold;
+            margin-bottom: 1rem;
+        }
+
+        .small-card-grid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+
+            img,
+            .small-image-placerholder {
+                width: 160px;
+                height: 100%;
+            }
+
+            .small-card-content {
+                position: relative;
+                width: 160px;
+                height: 100%;
+                background-color: $color-white;
+            }
+        }
+
+        .small-card {
+            border: none;
+            background-color: $color-white;
+
+            .small-card-body {
+                margin: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .small-card-category {
+                    font-size: $font-size-13;
+                    font-weight: $font-weight-medium;
+                    color: $color-gray-2;
+                    margin: 0rem;
+                }
+
+                .small-card-title {
+                    font-size: $font-size-16;
+                    font-weight: $font-weight-semibold;
+                }
+
+                .small-card-rating {
+                    color: $color-theme-red;
+                    letter-spacing: 1px;
+                }
+
+                .small-card-price {
+
+                    .small-card-discount-price {
+                        font-size: $font-size-18;
+                        font-weight: $font-weight-semibold;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include desktop {
+    .__small-card-section {
+
+        .container {
+
+            .col {
+                flex: 1 0 0%;
+                align-items: flex-start;
+            }
+
+            .small-card-grid {
+
+                img,
+                .small-image-placerholder {
+                    width: 160px;
+                    height: 100%;
+                }
+
+                .small-card-content {
+                    position: relative;
+                    width: 160px;
+                    height: 100%;
+                    background-color: $color-white;
+                }
+            }
+        }
+    }
+}

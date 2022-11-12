@@ -1,0 +1,26 @@
+.__sales-notification {
+    margin-top: 4rem;
+
+    .container {
+        padding: 0.3rem 0 0.3rem 0;
+        box-shadow: 1px 1px 1px 1px $linear-gradient-light;
+
+        p {
+            margin-top: 1rem;
+            text-align: center;
+            color: $color-theme-red;
+            font-size: $font-size-18;
+            font-weight: $font-weight-medium;
+        }
+    }
+}
+
+@include desktop {
+    .container {
+        max-width: 1110px;
+
+        p {
+            font-size: $font-size-16;
+        }
+    }
+}

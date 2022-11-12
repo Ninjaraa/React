@@ -1,0 +1,92 @@
+.shoppingcart {
+    width: 100% !important;
+
+    .shoppingcart-item {
+        margin: 30px 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .item-image {
+            height: 65px;
+            width: 65px;
+            margin-right: 20px;
+            background-color: $color-gray-1;
+
+            img {
+                height: 65px;
+                width: 65px;
+            }
+        }
+
+        .item-info {
+            flex: 3;
+
+            .item-info-name {
+                font-weight: $font-weight-medium;
+                margin-bottom: 5px;
+                font-size: $font-size-18;
+            }
+
+            .item-info-quantity-box {
+                display: inline-block;
+                border-radius: 5px;
+                font-size: $font-size-14;
+
+                span {
+                    display: inline-block;
+                    height: 25px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    padding-top: 2px;
+                    padding-bottom: 2px;
+                    border-top: 1px solid $linear-gradient-dark;
+                    border-bottom: 1px solid $linear-gradient-dark;
+                }
+
+                .box-button-left {
+                    height: 25px;
+                    width: 25px;
+                    border: none;
+                    border-radius: 5px 0 0 5px;
+                    border: 1px solid $linear-gradient-dark;
+                    background-color: $linear-gradient-light;
+                }
+
+                .box-button-right {
+                    height: 25px;
+                    width: 25px;
+                    border: none;
+                    border-radius: 0 5px 5px 0;
+                    border: 1px solid $linear-gradient-dark;
+                    background-color: $linear-gradient-light;
+                }
+
+            }
+        }
+
+        .item-price {
+            flex: 1;
+            text-align: right;
+            font-weight: $font-weight-medium;
+            margin-bottom: 5px;
+            font-size: $font-size-18;
+
+            button {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+
+                i {
+                    font-size: $font-size-14;
+                }
+            }
+        }
+    }
+}
+
+@include desktop {
+    .shoppingcart {
+        width: 500px !important;
+    }
+}

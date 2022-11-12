@@ -1,0 +1,95 @@
+html,
+body {
+    font-size: $font-size-16;
+    font-family: $font-poppins;
+    font-weight: $font-weight-regular;
+    background-color: $color-white;
+}
+
+header {
+    background-color: $color-gray-7;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.bg-theme {
+    background-color: $color-theme-red;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+        background-color: $color-theme-dark;
+        color: $color-white;
+        transition: all 0.1s ease-in-out;
+    }
+}
+
+a {
+    color: $color-theme-dark;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-theme-red;
+        text-decoration: underline;
+    }
+}
+
+.section-title {
+    margin-top: 2rem;
+    font-size: $font-size-20;
+    font-family: $font-poppins;
+    font-weight: $font-weight-bold;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 1rem;
+    font-size: $font-size-24;
+    font-weight: $font-weight-bold;
+    color: $color-theme-dark;
+}
+
+h2 {
+    color: $color-theme-dark;
+    font-weight: $font-weight-bold;
+}
+
+.h2-flashsale {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-42;
+    color: $color-white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: $color-theme-dark;
+    font-weight: $font-weight-semibold;
+}
+
+p {
+    font-weight: $font-weight-regular;
+}
+
+hr {
+    border-top: 3px solid $color-gray-5;
+    max-width: 1110px;
+    margin-left: 20%;
+    margin-top: 5rem;
+}
+
+.required {
+    color: $color-theme-red;
+}
+
+@include desktop {
+
+    h1 {
+        font-size: $font-size-42;
+        font-weight: $font-weight-bold;
+        color: $color-theme-dark;
+    }
+
+}

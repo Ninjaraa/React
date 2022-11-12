@@ -1,0 +1,339 @@
+// Form button
+.form-btn {
+    grid-column: 1 / -1;
+    background-color: $color-theme-red;
+    color: $color-white;
+    border-radius: none;
+    border: none;
+    font-weight: $font-weight-semibold;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+
+    &:hover {
+        background-color: $color-theme-dark;
+        color: $color-white;
+    }
+}
+
+// Big card button
+.btn-card-theme {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    background-color: $color-white;
+    font-weight: $font-weight-semibold;
+    color: $color-theme-dark;
+    height: 60px;
+    width: 188px;
+    line-height: 60px;
+    border: none;
+    padding: 0 15px;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+    }
+
+    &::before {
+        left: 0.3rem;
+        top: 0.3rem;
+        border-left: 2px solid $color-theme-dark;
+        border-top: 2px solid $color-theme-dark;
+    }
+
+    &::after {
+        right: 0.3rem;
+        bottom: 0.3rem;
+        border-right: 2px solid $color-theme-dark;
+        border-bottom: 2px solid $color-theme-dark;
+    }
+
+    &:hover {
+        background-color: $color-theme-dark;
+        color: $color-white;
+
+        &::before {
+            left: 0.3rem;
+            top: 0.3rem;
+            border-left: 2px solid $color-white;
+            border-top: 2px solid $color-white;
+        }
+
+        &::after {
+            right: 0.3rem;
+            bottom: 0.3rem;
+            border-right: 2px solid $color-white;
+            border-bottom: 2px solid $color-white;
+        }
+    }
+}
+
+// Button dark theme
+.btn-dark-theme {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    background-color: $color-theme-dark;
+    font-weight: $font-weight-semibold;
+    color: $color-white;
+    height: 60px;
+    width: 188px;
+    line-height: 60px;
+    border: none;
+    padding: 0 15px;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+    }
+
+    &::before {
+        left: 0.3rem;
+        top: 0.3rem;
+        border-left: 2px solid $color-white;
+        border-top: 2px solid $color-white;
+    }
+
+    &::after {
+        right: 0.3rem;
+        bottom: 0.3rem;
+        border-right: 2px solid $color-white;
+        border-bottom: 2px solid $color-white;
+    }
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-theme-dark;
+
+        &::before {
+            left: 0.3rem;
+            top: 0.3rem;
+            border-left: 2px solid $color-theme-dark;
+            border-top: 2px solid $color-theme-dark;
+        }
+
+        &::after {
+            right: 0.3rem;
+            bottom: 0.3rem;
+            border-right: 2px solid $color-theme-dark;
+            border-bottom: 2px solid $color-theme-dark;
+        }
+
+    }
+}
+
+// Button light theme
+.btn-light-theme {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    background-color: $color-theme-dark;
+    font-weight: $font-weight-semibold;
+    color: $color-white;
+    height: 60px;
+    width: 188px;
+    line-height: 60px;
+    border: none;
+    padding: 0 15px;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+    }
+
+    &::before {
+        left: 0.3rem;
+        top: 0.3rem;
+        border-left: 2px solid $color-white;
+        border-top: 2px solid $color-white;
+    }
+
+    &::after {
+        right: 0.3rem;
+        bottom: 0.3rem;
+        border-right: 2px solid $color-white;
+        border-bottom: 2px solid $color-white;
+    }
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-white;
+
+        &::before {
+            left: 0.3rem;
+            top: 0.3rem;
+            border-left: 2px solid $color-theme-dark;
+            border-top: 2px solid $color-theme-dark;
+        }
+
+        &::after {
+            right: 0.3rem;
+            bottom: 0.3rem;
+            border-right: 2px solid $color-theme-dark;
+            border-bottom: 2px solid $color-theme-dark;
+        }
+
+    }
+}
+
+// Card button red theme
+.card-btn {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    background-color: $color-theme-red;
+    font-size: $font-size-14;
+    text-align: center;
+    color: $color-white;
+    font-weight: $font-weight-regular;
+    width: 100%;
+    line-height: 50px;
+    border: none;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+    }
+
+    &::before {
+        left: 0.3rem;
+        top: 0.3rem;
+        border-left: 2px solid $color-white;
+        border-top: 2px solid $color-white;
+    }
+
+    &::after {
+        right: 0.3rem;
+        bottom: 0.3rem;
+        border-right: 2px solid $color-white;
+        border-bottom: 2px solid $color-white;
+    }
+
+    &:hover {
+        color: $color-white;
+        text-decoration: none;
+    }
+
+}
+
+// Product button
+.product-card-btn {
+    display: none;
+    width: 207px;
+    height: 50px;
+    background-color: $color-theme-red;
+    font-size: $font-size-16;
+    text-align: center;
+    color: $color-white;
+    font-weight: $font-weight-bold;
+    border: none;
+
+    &:hover {
+        color: $color-white;
+        text-decoration: none;
+    }
+
+}
+
+// Button for header
+.btn-header {
+    position: relative;
+    background-color: $color-theme-red;
+    color: $color-white;
+    font-weight: $font-weight-semibold;
+    height: 60px;
+    width: 188px;
+    line-height: 60px;
+    border: none;
+    padding: 0 15px;
+
+    &:hover {
+        background-color: $color-theme-dark;
+        color: $color-white;
+    }
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+    }
+
+    &::before {
+        left: 0.3rem;
+        top: 0.3rem;
+        border-left: 2px solid $color-white;
+        border-top: 2px solid $color-white;
+    }
+
+    &::after {
+        right: 0.3rem;
+        bottom: 0.3rem;
+        border-right: 2px solid $color-white;
+        border-bottom: 2px solid $color-white;
+    }
+}
+
+@include desktop {
+    .form-btn {
+        width: 210px;
+    }
+
+    .btn-dark-theme {
+        position: absolute;
+    }
+
+    .btn-light-theme {
+        position: absolute;
+        background-color: $color-white;
+        color: $color-theme-dark;
+
+        &::before {
+            border-left: 2px solid $color-theme-dark;
+            border-top: 2px solid $color-theme-dark;
+        }
+
+        &::after {
+            border-right: 2px solid $color-theme-dark;
+            border-bottom: 2px solid $color-theme-dark;
+        }
+
+        &:hover {
+            background-color: $color-theme-dark;
+            color: $color-white;
+
+            &::before {
+                border-left: 2px solid $color-white;
+                border-top: 2px solid $color-white;
+            }
+
+            &::after {
+                border-right: 2px solid $color-white;
+                border-bottom: 2px solid $color-white;
+            }
+        }
+    }
+
+    .product-card-btn {
+        display: block;
+
+        &:hover {
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+}

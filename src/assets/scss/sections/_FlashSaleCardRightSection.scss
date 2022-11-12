@@ -1,0 +1,91 @@
+.__flashsale-section-r {
+    margin-top: 4rem;
+
+    .container {
+        max-width: 1110px;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .flascard-background {
+            display: none;
+            height: 100%;
+            width: 825px;
+            background-color: $color-gray-5;
+        }
+
+        .flashcard-content {
+            display: none;
+            text-align: center;
+
+        }
+    }
+}
+
+@include desktop {
+    .__flashsale-section-r {
+        margin-top: 4rem;
+
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+
+            .grid {
+                display: grid;
+                grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+                gap: 1rem;
+
+
+                #item-0 {
+                    grid-row: 1 / 5;
+                    grid-column: 3 / 6;
+                }
+
+                #item-1 {
+                    grid-row: 2 / 3;
+                    grid-column: 4 / 5;
+                }
+
+                #item-2 {
+                    grid-row: 1 / 5;
+                    grid-column: 1 / 2;
+                }
+
+                #item-3 {
+                    grid-row: 1 / 5;
+                    grid-column: 2 / 3;
+                }
+
+
+
+                .flascard-background {
+                    display: block;
+                }
+
+                .flashcard-content {
+                    display: block;
+                    text-align: center;
+                }
+            }
+
+            .flashcard {
+
+                &:hover .flashcard-menu {
+                    display: block;
+                }
+
+                &:hover .card-btn {
+                    display: block;
+                }
+
+            }
+
+
+        }
+    }
+}

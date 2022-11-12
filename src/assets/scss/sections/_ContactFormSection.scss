@@ -1,0 +1,104 @@
+.__contact-form-section {
+    margin-top: 4rem;
+
+    .container {
+        width: 500px;
+
+        .contact-us {
+            margin-top: 2rem;
+        }
+
+        .form-success {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: $font-size-20;
+            font-weight: $font-weight-bold;
+            color: $color-theme-dark;
+        }
+
+        .form-error {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: $font-size-20;
+            font-weight: $font-weight-bold;
+            color: $color-theme-red;
+        }
+
+        h2 {
+            font-size: $font-size-18;
+            font-weight: $font-weight-bold;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+
+            input {
+                width: 100%;
+                padding: 18px 20px;
+                border: 1px solid $color-gray-0;
+                font-size: $font-size-13;
+
+                &:focus {
+                    outline: 0;
+                }
+            }
+
+            .textarea {
+                grid-column: 1 / -1;
+
+                textarea {
+                    width: 100%;
+                    height: 140px;
+                    border: 1px solid $color-gray-0;
+                    font-size: $font-size-13;
+                    padding: 18px 20px;
+                    resize: none;
+
+                    &:focus {
+                        outline: 0;
+                    }
+                }
+            }
+
+            .error {
+                color: $color-theme-red;
+                border: 1px solid $color-theme-red;
+            }
+
+            .errorMessage {
+                margin-top: 5px;
+                color: $color-theme-red;
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .__contact-form-section {
+
+        .container {
+            width: 1110px;
+
+            form {
+                grid-template-columns: 1fr 1fr;
+
+                input {
+                    width: 100%;
+                    padding: 18px 20px;
+                    border: 1px solid $color-gray-0;
+                    font-size: $font-size-13;
+
+                    &:focus {
+                        outline: 0;
+                    }
+                }
+            }
+        }
+    }
+}

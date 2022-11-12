@@ -1,0 +1,129 @@
+.card {
+    border: none;
+    height: 343px;
+    width: 255px;
+    background-color: $color-white;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 10px;
+    margin-top: 4rem;
+
+    img,
+    .card-img {
+        height: 210px;
+        width: 255px;
+        background-color: $linear-gradient-light;
+        position: relative;
+
+        .card-menu {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: none;
+
+            .menu-link {
+                background-color: $color-white;
+                color: $color-theme-dark;
+                width: 36px;
+                height: 36px;
+                margin-bottom: 15px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 0 6px 4px $color-shadow;
+                position: relative;
+                border: none;
+                outline: none;
+
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-theme-dark;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .card-body {
+        text-align: center;
+        height: 100%;
+
+        .card-category {
+            font-size: $font-size-13;
+            font-weight: $font-weight-medium;
+            color: $color-gray-2;
+        }
+
+        .card-title {
+            font-size: $font-size-16;
+            font-weight: $font-weight-semibold;
+            line-height: 1rem;
+        }
+
+        .card-rating {
+            color: $color-theme-red;
+            letter-spacing: 1px;
+        }
+
+        .card-price {
+
+            .original-price {
+                font-size: $font-size-16;
+                text-decoration: line-through;
+                display: inline-block;
+                padding-right: 0.3rem;
+            }
+
+            .discount-price {
+                font-size: $font-size-18;
+                font-weight: $font-weight-semibold;
+                display: inline-block;
+            }
+        }
+
+        .card-background {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: none;
+            transition: top 0.3s ease-in-out;
+
+            &:hover {
+                color: $color-white;
+                background-color: $color-theme-dark;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &:hover .card-menu {
+        display: none;
+    }
+
+    &:hover .card-btn {
+        display: none;
+    }
+}
+
+
+@include desktop {
+    .card {
+        border: none;
+        height: 343px;
+        width: 255px;
+        background-color: $color-white;
+        border-radius: 0;
+        border: 0;
+        margin-bottom: 10px;
+        margin-top: 4rem;
+
+        &:hover .card-menu {
+            display: block;
+        }
+
+        &:hover .card-btn {
+            display: block;
+        }
+    }
+}

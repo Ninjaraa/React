@@ -1,0 +1,73 @@
+// Colors
+$primaryBackgroundColor: #F2f2f2;
+$secondaryBackgroundColor: #FFFFFF;
+$color-white: #FFFFFF;
+$color-gray-0: #E6E6E6;
+$color-gray-1: #BEBEBE;
+$color-gray-2: #616365;
+$color-gray-3: #E6E6E6;
+$color-gray-4: #F6F6F6;
+$color-gray-5: #BBBBBB;
+$color-gray-6: #F7F8FA;
+$color-gray-7: #F2f2f2;
+$color-theme: #F5F5F5;
+$color-theme-red: #FF7373;
+$color-theme-light: #EDFCFA;
+$color-theme-dark: #23262A;
+$color-theme-darkest: #222529;
+$color-shadow: rgba(0, 0, 0, 0.06);
+$link-color: #6794C2;
+
+// Font styling
+$font-poppins: 'Poppins', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
+$font-size-button: 0.875rem;
+$font-size-11: 0.688rem;
+$font-size-13: 0.813;
+$font-size-14: 0.8rem;
+$font-size-16: 1rem;
+$font-size-17: 1.0625rem;
+$font-size-18: 1.125rem;
+$font-size-19: 1.188rem;
+$font-size-20: 1.25rem;
+$font-size-21: 1.33rem;
+$font-size-24: 1.50rem;
+$font-size-32: 2rem;
+$font-size-35: 2.188rem;
+$font-size-36: 2.25rem;
+$font-size-42: 2.2rem;
+$font-size-43: 2.4rem;
+$font-size-45: 2.8rem;
+$font-size-48: 3rem;
+$font-size-60: 3.75rem;
+$font-size-80: 5rem;
+$font-size-65: 4.063rem;
+
+// Borders
+$border-radius-xsmall: 6px;
+$border-radius-small: 8px;
+$border-radius-medium: 25px;
+$border-radius-rounded: 50%;
+
+// Breakpoints 
+$breakpoint-mobile: 576px;
+$breakpoint-mobile-max-width: 540px;
+$breakpoint-tablet: 768px;
+$breakpoint-tablet-max-width: 720px;
+$breakpoint-l-device: 992px;
+$breakpoint-l-device-max-width: 960px;
+$breakpoint-desktop: 1200px;
+$breakpoint-desktop-max-width: 1140px;
+$breakpoint-desktop-l: 1450px;
+
+// Gradients
+$linear-gradient-dark: #E6E6E6;
+$linear-gradient-light: #F5F5F5; 
+
+// Max-width
+$max-width: 1680px;

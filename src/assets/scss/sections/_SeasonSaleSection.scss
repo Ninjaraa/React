@@ -1,0 +1,88 @@
+.__season-sale-section {
+  margin-top: 1rem;
+
+  .container {
+
+    .season-sale-grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .season-content {
+        display: block;
+        text-align: center;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .__season-sale-section {
+    margin-top: 4rem;
+
+    .container {
+
+      .season-sale-grid {
+        display: grid;
+        grid-template-rows: repeat(5, 112px);
+        grid-template-columns: repeat(5, 336px);
+
+        #winter-img {
+          width: 1045px;
+          height: 100%;
+          grid-row: 1 / 4;
+          grid-column: 1 / 4;
+
+        }
+
+        #new-arrivals-img {
+          width: 635px;
+          height: 100%;
+          grid-row: 1 / 4;
+          grid-column: 4 / 5;
+        }
+
+        .season-content {
+          display: block;
+          text-align: left;
+        }
+
+        #winter-content {
+          padding-left: 2rem;
+          width: 426px;
+          grid-row: 2 / 2;
+          grid-column: 1 / 2;
+        }
+
+        #new-arrivals-content {
+          padding-left: 2rem;
+          width: 182px;
+          grid-row: 2 / 4;
+          grid-column: 4 / 5;
+        }
+
+        h1 {
+          text-align: left;
+        }
+
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
